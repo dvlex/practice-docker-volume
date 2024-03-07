@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "lithia-converter-backend"
+version = "0.1.0"
+description = ""
+authors = ["Alexandro Castillo <wikitelmex@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.103.0"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+langchain = "^0.0.302"
+pytest = "^7.4.1"
+pylint = "^2.17.5"
+httpx = "^0.24.1"
+openai = "^0.28.1"
+python-multipart = "^0.0.6"
+mysql-connector-python = "^8.1.0"
+duckduckgo-search = "^3.8.5"
+snowflake-connector-python = "^3.5.0"
+azure-identity = "^1.15.0"
+azure-keyvault-secrets = "^4.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

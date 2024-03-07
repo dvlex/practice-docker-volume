@@ -1,0 +1,44 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "Lithia Converter",
+	"dockerComposeFile": "../docker-compose.yml",
+	"shutdownAction": "stopCompose",
+	"service": "devcontainer",
+	"runServices": [
+		"devcontainer"
+	],
+	"workspaceFolder": "/workspaces/lithia-converter-backend",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot",
+				"ms-python.python",
+				"pyDocGenAI.pyDocGenAI",
+				"ms-python.autopep8",
+				"ms-python.vscode-pylance",
+				"ms-python.pylint",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"GitHub.copilot-chat",
+				"github.vscode-github-actions",
+				"ms-azuretools.vscode-docker",
+				"eamodio.gitlens"
+			]
+		}
+	},
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "./.devcontainer/postinstall.sh",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	"remoteUser": "${localEnv:USER}"
+}
